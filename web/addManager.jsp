@@ -10,11 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <script src="bootstrap.min.js"></script>
+        <jsp:include page="WEB-INF/incBS.jspf" />
     </head>
     <body> 
         <div class="container-fluid" style="background-color:rgba(255,255,255,.3);">
+        <form action="">
         <fieldset>
             <legend>Add manager</legend>
             <div class="row">
@@ -23,7 +23,7 @@
                     <label for="brnch">Branch :</label>
                 </div>
                 <div class="col-sm-10">
-                    <select name="cars" class="form-control" id="brnch">
+                    <select name="cars" class="form-control" id="brnch" required>
                         <option value="volvo">Volvo</option>
                         <option value="saab">Saab</option>
                         <option value="fiat">Fiat</option>
@@ -38,7 +38,7 @@
                     <label for="usr">Username :</label>
                 </div>
                 <div class="col-sm-10">
-                    <input type="text" id="usr" class="form-control" placeholder="Enter password"></input>
+                    <input type="text" id="usr" class="form-control" placeholder="Enter username" required></input>
                 </div>
                 <br>
             </div>
@@ -48,7 +48,7 @@
                     <label for="pass">Password :</label>
                 </div>
                 <div class="col-sm-10">
-                    <input type="password" id="pass" class="form-control" placeholder="Enter password"></input>
+                    <input type="password" id="pass" class="form-control" placeholder="Enter password" required></input>
                 </div>
                 <br>
             </div>
@@ -58,7 +58,7 @@
                     <label for="doj">Date of joining :</label>
                 </div>
                 <div class="col-sm-10">
-                    <input type="date" id=""doj class="form-control"></input>
+                    <input type="date" id=""doj class="form-control" required></input>
                 </div>
                 <br>
             </div>
@@ -68,7 +68,7 @@
                     <label for="dob">Date of birth :</label>
                 </div>
                 <div class="col-sm-10">
-                    <input type="date" id="dob" class="form-control"></input>
+                    <input type="date" id="dob" class="form-control" required></input>
                 </div>
                 <br>
             </div>
@@ -78,7 +78,7 @@
                     <label for="slry">Salary:</label>
                 </div>
                 <div class="col-sm-10">
-                    <input type="number" id="slry" class="form-control" placeholder="Enter salary"></input>
+                    <input type="number" id="slry" class="form-control" placeholder="Enter salary" required></input>
                 </div>
                 <br>
             </div>
@@ -87,11 +87,12 @@
                     <div class="col-sm-10"></div>
                     <div class="col-sm-2">
                         <br>
-                        <input type="submit" id="submit" class="form-control" value="Create">
+                        <input type="submit" id="submit" class="form-control btn btn-primary" value="Create">
                     </div>
                     <br>
             </div>        
         </fieldset>
+        </form>
         </div>
     </body>
 </html>
