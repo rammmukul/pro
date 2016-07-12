@@ -13,8 +13,6 @@
         <title>Registration Form</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" type="text/css" href="regcss.css"/>
-       <script type= "text/javascript" src = "countries.js"></script>
-
         
     </head>
     <body>    
@@ -60,39 +58,79 @@
                     </label>
                     <input type="text" class="long"/>
                 </p>
-                
-                <p><label>Country</label> <select name="country" class="countries" id="countryId">
-<option value="">Select Country</option>
-</select></p>
-<p><label>State</label>
-<select name="state" class="states" id="stateId">
-<option value="">Select State</option>
-</select></p>
-<p><label>City</label><select name="city" class="cities" id="cityId">
-<option value="">Select City</option>
-    </select></p>
-    <p>
-        <label>Find Manager-</label>
-         <input type="text" name="Manager"><br>
-    </p>
-<script src="jquery.js"></script>
-<script src="location.js"></script>
-            </fieldset>
-            
-            <br>
-                    
+                <p>
+                    <label>City *
+                    </label>
+                    <input type="text" class="long"/>
+                </p>
+                <p>
+                    <label>State*
+                    </label>
+                    <select>
+                        <option>
+                        </option>
+                        <option value="1">Uttar Pradesh
+                        </option>
+                        <option value="2">Madhya Pradesh
+                        </option>
+                        <option value="3">Himachal Pradesh
+                        </option>
+                        <option value="4">Haryana
+                        </option>
+                        <option value="5">Jammu & Kashmir
+                        </option>
+                        <option value="6">Rajasthan
+                        </option>
+                        <option value="7">Gujarat
+                        </option>
+                        <option value="8">West Bengal
+                        </option>
+                        <option value="9">Uttarakhand
+                        </option>
+                        <option value="10">Kerala
+                        </option>
+                        <option value="11">Assam
+                        </option>
+                        <option value="12">Arunachal Pradesh
+                        </option>
+                        <option value="13">Andhra Pradesh
+                        </option>
+                        <option value="14">Maharashtra
+                        </option>
+                        <option value="15">Goa
+                        </option>
+                        <option value="16">Tamil Nadu
+                        </option>
+                        <option value="17">Meghalaya
+                        </option>
+                        <option value="18">Mizoram
+                        </option>
+                        <option value="19">Bihar
+                        </option>
+                        <option value="20">Karnataka
+                        </option>
+                        <option value="21">Odisha
+                        </option>
+                        <option value="22">Manipur
+                        </option>
+                        <option value="23">Punjab
+                        </option>
+                        <option value="24">Sikkim
+                        </option>
+                    </select>
+                    </fieldset>
             <fieldset class="row3">
                 <legend>Further Information
                 </legend>
                 <p>
                     <label>Gender *</label>
-                    <input type="radio" name="Gender" value="radio"/>Male<br>
-                
-                    <input type="radio" name="Gender" value="radio"/>Female<br>
-                    
+                    <input type="radio" value="radio"/>
+                    <label class="gender">Male</label>
+                    <input type="radio" value="radio"/>
+                    <label class="gender">Female</label>
                 </p>
                 <p>
-                    <label>Date Of Birth *
+                    <label>Birthdate *
                     </label>
                     <select class="date">
                         <option value="1">01
