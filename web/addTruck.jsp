@@ -90,7 +90,8 @@
                 <div class="col-sm-10"></div>
                 <div class="col-sm-2">
                     <br>
-                    <input type="submit" id="submit" class="form-control btn btn-primary" value="Create">
+                    <input type="submit" name="submit" class="form-control btn btn-primary" value="Create">
+                    <% %>
                 </div>
                 <br>
             </div>
