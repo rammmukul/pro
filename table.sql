@@ -16,8 +16,7 @@ create database trans;
 		mob int(10)not null,
 		rfrm varchar(20),
 		rto varchar(20),
-		tstatus varchar(20),
-		dteadd date,not null
+		tstatus varchar(20)
 		);
 	create table query(
 		id int primary key AUTO_INCREMENT,
